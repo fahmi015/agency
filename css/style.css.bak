@@ -307,8 +307,7 @@ footer{
 		max-width:auto !important%;
 	}
 	.navbar-nav {
-		margin-left: auto;
-		align-items: center;
+		margin-left: auto;display: flex;align-items: center;
 	}
 }
 .navbar-light .navbar-toggler {
