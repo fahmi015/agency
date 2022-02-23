@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" id='aoscss'>
 
-    <title>FHMCoding - Experts en Marketing &amp; Transformation Digitale</title>
+    <title>Digital thing - Experts en Marketing &amp; Transformation Digitale</title>
+     <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white" id=Accueil>
@@ -16,18 +21,22 @@
         <a class="navbar-brand" href="#"><img src="img/digital-thing-logo - Copy.png" width="130"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav" style="margin-left: auto;">
             
             <li class="nav-item">
               <a class="nav-link" href="#Services">Nos Services</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#équipe">Notre équipe</a>
             </li>
-			<li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="#partenaires">Nos Partenaires</a>
+            </li>
+			     <li class="nav-item">
               <a class="nav-link" href="#Clients">Nos Clients</a>
             </li>
 			
@@ -42,29 +51,33 @@
     
     <div class="jumbtron">
         <div class="overflow"></div>
+        <video loop="true" autoplay="true" muted="true" preload="true" >
+            <source src="img/intro.webm" type="video/webm">
+        </video>
         <div class="container jumbtron-content">
           <div class="d-flex justify-content-center ">
-              <div class="text-center" style="width: 65%;">
-                <span class="title">Agence Marketing Digital</span>
-                <h1>Plus efficace, plus rapide <span>.</span></h1>
-                <p>FHMCoding, c’est une équipe de première division experte en marketing et transformation digitale qui joue pour vous.</p>
-                <a href="#Contact">Démarrer mon projet</a>
+              <div class="text-center"  data-aos="zoom-out-up" style="width: 65%;">
+                <span class="title" id="title"></span>
+                <h1 >Plus efficace, plus rapide <span>.</span></h1>
+                <p >Digital Thing, c’est une équipe de première division experte en marketing et transformation digitale qui joue pour vous.</p>
+                <a href="#Contact" >Démarrer mon projet</a>
               </div>
           </div>
         </div>
     </div>
 
-    <div class="services" id=Services>
+
+    <div class="services" id="Services">
       <div class="container">
           <div class="text-center d-flex justify-content-center">
-			<div style='max-width:400px;'> 
-            <span class="title">NOS SERVICES</span>
-            <h2>tout ce dont vous avez besoin  <span class="point">.</span></h2>
-			</div>
+			       <div style='max-width:400px;' > 
+            <span class="title" data-aos="zoom-in">NOS SERVICES</span>
+            <h2  data-aos="zoom-in-up">tout ce dont vous avez besoin  <span class="point">.</span></h2>
+			   </div>
           </div>
           <div class="items row">
             <div class="col-md-4 col-sm-6 col-12 ">
-              <div class="item mx-4">
+              <div data-aos="zoom-in-right"  class="item mx-4  overflow-x-hidden">
                 <div class="icone">
                   <img src="img/ventes-marketing-picto.webp" width="100">
                 </div>
@@ -75,18 +88,18 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
-              <div class="item mx-4">
+              <div data-aos="zoom-in-up"  class="item mx-4 overflow-x-hidden">
                 <div class="icone">
                   <img src="img/creation-site-vitrine-picto-1.png" width="100">
                 </div>
                 <div class="item-body">
-                  <h3>Création site web</h3>
+                  <h3 data-aos="zoom-in">Création site web</h3>
                   <p>Création et Développement sur mesure Site Web: Corporate, E-Commerce et Mobile.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
-              <div class="item mx-4">
+              <div data-aos="zoom-in-left"  class="item mx-4 overflow-x-hidden">
                 <div class="icone">
                   <img src="img/conversion-ux-picto.png" width="100">
                 </div>
@@ -97,7 +110,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
-              <div class="item mx-4">
+              <div data-aos="zoom-in-right"  class="item mx-4 overflow-x-hidden">
                 <div class="icone">
                   <img src="img/creation-site-e-commerce-picto.png" width="100">
                 </div>
@@ -108,7 +121,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
-              <div class="item mx-4">
+              <div data-aos="zoom-in-up"  class="item mx-4 overflow-x-hidden">
                 <div class="icone">
                   <img src="img/referencement-naturel-picto.png" width="100">
                 </div>
@@ -119,7 +132,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
-              <div class="item mx-4">
+              <div data-aos="zoom-in-left"  class="item mx-4 overflow-x-hidden">
                 <div class="icone">
                   <img src="img/travail-collaboratif-picto.png" width="100">
                 </div>
@@ -138,33 +151,33 @@
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-6 col-12">
-            <div class="text">
+            <div class="text overflow-x-hidden " data-aos="zoom-in-right">
               <h3>Contactez nos experts marketing</h3>
               <p>et découvrez de nouvelles opportunités.</p>
             </div>
           </div>
           <div class="col-md-3 col-12">
-            <div>
-              <a href="tel:+21298211688" class="shadow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Etre recontacté</a>
+            <div >
+              <a data-aos="zoom-in-left" href="tel:+21298211688" class="shadow overflow-x-hidden"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Etre recontacté</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="team" id=équipe>
+    <div class="team" id="équipe">
       <div class="container">
 			<div class="text-center  d-flex justify-content-center">
-				<div style='max-width:400px;'> 
-				<span class="title">nous formons une super équipe</span>
-				<h2>Notre équipe<span class="point">.</span></h2>
+				<div style='max-width:400px;' > 
+				<span class="title " data-aos="zoom-in">nous formons une super équipe</span>
+				<h2  data-aos="zoom-in-up">Notre équipe<span class="point">.</span></h2>
 				</div>
 			</div>
           
           <div class="profiles">
-              <div class=" row">
-				<div class="col-md-3 col-sm-6 col-12">
-				  <div class="profile">
+              <div class=" row justify-content-center">
+				<div class="col-md-3 col-sm-6 col-12 mb-5" >
+				  <div class="profile overflow-x-hidden" data-aos="zoom-in-right" data-aos-duration="1500">
 					<div class="header">
 					  <img src="img/2.png">
 					</div>
@@ -175,39 +188,29 @@
 				  </div>
 				</div>
 				
-            <div class="col-md-3 col-sm-6 col-12">
-              <div class="profile">
+            <div class="col-md-3 col-sm-6 col-12 mb-5" >
+              <div class="profile overflow-x-hidden" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="header">
                   <img src="img/4.png">
                 </div>
                 <div>
                   <span>Mobile Developer</span>
-                  <h3>Hamid Fahmi</h3>
+                  <h3>Ismail Errahali</h3>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-12">
-              <div class="profile">
+            <div class="col-md-3 col-sm-6 col-12 mb-5" >
+              <div class="profile overflow-x-hidden" data-aos="zoom-in-left" data-aos-duration="1500">
                 <div class="header">
                   <img src="img/6.png">
                 </div>
                 <div>
                   <span>Digital marketing analyst</span>
-                  <h3>Mustapha Fahmi</h3>
+                  <h3>Youssef Elomari</h3>
                 </div>
               </div>
             </div>
-			<div class="col-md-3 col-sm-6 col-12">
-				  <div class="profile">
-					<div class="header">
-					  <img src="img/10.png">
-					</div>
-					<div>
-					  <span>Full Stck Developer</span>
-					  <h3>Hassan Fahmi</h3>
-					</div>
-				  </div>
-				</div>
+			
           </div>
           </div>
 
@@ -215,75 +218,139 @@
       </div>
     </div>
 
-    <div class="clients" id="Clients">
+    <div class="clients" id="partenaires">
       <div class="container">
           <div class="text-center d-flex justify-content-center">
-		  <div style='max-width:400px;'> 
-            <h2>Des partenaires et des solutions de haut-niveau <span class="point">.</span></h2>
-            <span class="title" style="margin: 15px 0px;">Rejoignez des centaines de clients satisfaits</span>
+		        <div style='max-width:400px;'> 
+              <h2 data-aos="zoom-in-up" class="text-center">
+                  Creat
+              </h2> 
+              <h2 data-aos="zoom-in-left" class="text-center">   
+                  New 
+              </h2> 
+              <h2 data-aos="zoom-in-down" class="text-center">  
+                  Vision
+              </h2>
+              <span class="title" style="margin: 15px 0px;">Des partenaires et des solutions de haut-niveau</span>
             </div>
           </div>
           <div class="list_client">
             <div class="row">
-              <div class="col-md-3 text-center col-sm-6 col-12">
+              <div class="col-md-3 text-center col-sm-6 col-12 mb-5" data-aos="zoom-in-right">
                 <div class="client">
                   <img src="img/google-analytics-blanc2.webp">
                 </div>
               </div>
-              <div class="col-md-3 text-center col-sm-6 col-12">
+              <div class="col-md-3 text-center col-sm-6 col-12 mb-5" data-aos="zoom-in-up">
                 <div class="client">
                   <img src="img/campagne-sea-google.webp">
                 </div>
               </div>
-              <div class="col-md-3 text-center col-sm-6 col-12">
+              <div class="col-md-3 text-center col-sm-6 col-12 mb-5" data-aos="zoom-in-up">
                 <div class="client">
                   <img src="img/logo-prestashop-blanc.webp">
                 </div>
               </div>
-              <div class="col-md-3 text-center col-sm-6 col-12">
+              <div class="col-md-3 text-center col-sm-6 col-12 mb-5" data-aos="zoom-in-left">
                 <div class="client">
                   <img src="img/wordpress-logo-white.webp">
                 </div>
               </div>
-              <div class="col-md-3 text-center col-sm-6 col-12">
+              <div class="col-md-3 text-center col-sm-6 col-12 mb-5" data-aos="zoom-in-down">
                 <div class="client">
                   <img src="img/zoho-authorized-partner-logo-XS.webp">
                 </div>
               </div>
-              <div class="col-md-3 text-center col-sm-6 col-12">
+              <div class="col-md-3 text-center col-sm-6 col-12 mb-5" data-aos="zoom-in-down">
                 <div class="client">
                   <img src="img/semrush-logo-white.webp">
                 </div>
               </div>
-              <div class="col-md-3 text-center col-sm-6 col-12">
+              <div class="col-md-3 text-center col-sm-6 col-12 mb-5" data-aos="zoom-in-left">
                 <div class="client">
                   <img src="img/logo-Activateur-France-Num-orbiteo-400x200-2.webp">
                 </div>
               </div>
-              <div class="col-md-3 text-center col-sm-6 col-12">
+              <div class="col-md-3 text-center col-sm-6 col-12 mb-5">
                 <div class="client"> 
                   <img src="img/datadock-logo-white.webp">
                 </div>
               </div>
             </div>
           </div>
+          <div class="coin overflow-x-hidden" data-aos="zoom-in-up-left">
+            <video loop="true" autoplay="true" muted="true" preload="true" id="coin">
+              <source src="vedio/coin_3.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="coin_1 overflow-x-hidden" data-aos="zoom-in-down-left">
+            <video loop="true" autoplay="true" muted="true" preload="true" id="coin">
+              <source src="vedio/coin_1.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="coin_2 overflow-x-hidden" data-aos="zoom-in-up-right">
+            <video loop="true" autoplay="true" muted="true" preload="true" id="coin">
+              <source src="vedio/coin_2.webm" type="video/webm">
+            </video>
+          </div>
+
       </div>
     </div>
 
-    <div class="contactus" id=Contact>
+    <div class="team" id='Clients'>
+      <div class="container">
+        <div class="text-center  d-flex justify-content-center">
+          <div style='max-width:400px;' > 
+            <span class="title " data-aos="zoom-in">Rejoignez des centaines de clients satisfaits</span>
+            <h2  data-aos="zoom-in-up">Nos Clients<span class="point">.</span></h2>
+          </div>
+        </div>
+        <div class="sliders" data-aos="zoom-in-up">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide d-flex justify-content-center">
+
+                <img src="https://www.yazmarketing.com/wp-content/uploads/2021/10/Caractere.png" width="100">
+              </div>
+              <div class="swiper-slide d-flex justify-content-center">
+                <img src="https://www.yazmarketing.com/wp-content/uploads/2021/10/tafaseel.png" width="100">
+              </div>
+              <div class="swiper-slide d-flex justify-content-center">
+                <img src="https://www.yazmarketing.com/wp-content/uploads/2020/10/indigo-website-01.png" width="100">
+              </div>
+              <div class="swiper-slide d-flex justify-content-center">
+                <img src="https://www.yazmarketing.com/wp-content/uploads/2022/01/lambo.png" width="100">
+              </div>
+              <div class="swiper-slide d-flex justify-content-center">
+                <img src="https://www.yazmarketing.com/wp-content/uploads/2022/01/dubaicollection.jpg" width="100">
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    
+
+
+    <div class="contactus" id="Contact">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 col-12 space-between mb-4">
-            <div class="aside aside-top">
+          <div class="col-md-5 col-12 space-between mb-4" >
+            <div class="aside aside-top overflow-x-hidden" data-aos="zoom-in-right">
               <span>Contact & informations</span>
               <h2>Vous avez un projet ?</h2>
 
               <p>
-                FHMCoding, c’est une équipe de première division experte en marketing et transformation digitale qui joue pour vous.
-Contactez-nous puis installez-vous confortablement et préparez-vous au décollage.
+                Digital thing, c’est une équipe de première division experte en marketing et transformation digitale qui joue pour vous.
+                Contactez-nous puis installez-vous confortablement et préparez-vous au décollage.
               </p>
             </div>
-            <div class="aside aside-bottom">
+            <div class="aside aside-bottom" data-aos="zoom-in-up">
               <div>
                 <div class="info">
                   <div class="icone"> 
@@ -296,7 +363,7 @@ Contactez-nous puis installez-vous confortablement et préparez-vous au décolla
                   <div class="icone">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
                   </div>
-                  <div class="icone-txt">contact@fhmcoding.com</div>
+                  <div class="icone-txt">contact@Digital Thing.com</div>
                 </div>
 
                 <div class="info">
@@ -308,8 +375,8 @@ Contactez-nous puis installez-vous confortablement et préparez-vous au décolla
               </div>
             </div>
           </div>
-          <div class="col-md-7 col-12">
-            <div class="form">
+          <div class="col-md-7 col-12" >
+            <div class="form overflow-x-hidden" data-aos="zoom-in-left">
               <h4>Informations de contact</h4>
               <form>
                 <div class="row">
@@ -357,6 +424,40 @@ Contactez-nous puis installez-vous confortablement et préparez-vous au décolla
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" id='aosjs'></script>
+    <script>
+  AOS.init();
+
+</script>
+<script type="text/javascript">
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        
+        
+        var element = document.getElementById("aoscss");
+        element.remove();
+        var element2 = document.getElementById("aosjs");
+        element2.remove();
+      }
+    </script>
   </body>
 </html>

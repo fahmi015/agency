@@ -1,10 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
 }
 .navbar {    
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
     box-shadow: 0px 1px 1px #ebebeb;
 }
 li.nav-item {
@@ -16,23 +17,34 @@ li.nav-item.active {
     background-color: #09f;
     border-radius: 100px;
 }
+
 li.nav-item.active a{
     color: #fff !important;
 }
+li.nav-item a{
+    color: rgb(0 0 0 / 92%) !important;
+    text-transform: capitalize;
+}
 .jumbtron {
-    background-image: url(../img/3.jpg);
-	background-attachment:fixed;
+    
     width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 76.19px);
     color: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     position: relative;
-    background-position: center center;
+    
+}
+video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity:0,78;
+    top: -75px;
+
 }
 .jumbtron .overflow {
     top: 0;
-    background: #030303b0;
+    background: #03030396;
     position: absolute;
     left: 0;
     width: 100%;
@@ -193,12 +205,39 @@ li.nav-item.active a{
 .clients{
     background-color: #161617;
     padding: 70px 0px;
+    position: relative;
+    overflow: hidden;
 }
-.clients h2{
-    font-size: 3.5rem;
-    font-weight: 700;
+.clients h2 {
+    
+    font-size: 120px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: 0;
     color: #fff;
+    z-index: 9999;
+    position: relative;
+    line-height: 150px;
 }
+
+.coin {
+    position: absolute;
+    top: 220px;
+    z-index: 1;
+}
+.coin_1 {
+    position: absolute;
+    top: 340px;
+    right: 210px;
+    z-index: 1;
+}
+
+#coin {
+    width: 130px;
+}
+
+
 .clients .title{
     color: #afafaf;
     font-size: 15px;
@@ -299,10 +338,22 @@ footer{
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(64 177 252 / 60%)!important;
 } 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
+
 	.clients h2 {
 		font-size: 2rem ;
+        font-weight: bold;
+        line-height: 45px;
 	}
+    .coin{
+        display: none !important;
+    }
+    .coin_1{
+        display: none !important;
+    }
+    .coin_2{
+        display: none !important;
+    }
 	.text-center div{
 		max-width:auto !important%;
 	}
@@ -310,6 +361,18 @@ footer{
 		margin-left: auto;
 		align-items: center;
 	}
+    .jumbtron {
+        background-image: url(../img/3.jpg);
+        background-attachment:fixed;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        background-position: center center;
+    }
+    video{
+        display: none;
+    }
 }
 .navbar-light .navbar-toggler {
     color: rgb(0 153 255) !important;
@@ -317,4 +380,15 @@ footer{
 }
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0 !important;
+}
+.sliders{
+    margin: 100px 0px;
+}
+.swiper{
+    cursor: pointer;
+}
+.join{
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
